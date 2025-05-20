@@ -2,17 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: 'Employee-Task-Tracker',
   plugins: [react()],
-  base: '/employeetask/',
-  root: '.',
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
 });
 
