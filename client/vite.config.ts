@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: 'Employee-Task-Tracker',
+  base: '/Employee-Task-Tracker/',
   plugins: [react()],
 });
 
