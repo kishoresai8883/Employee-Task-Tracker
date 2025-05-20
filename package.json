@@ -9,7 +9,7 @@
     "dev:server": "nodemon server/index.js",
     "dev:client": "vite client",
     "build": "vite build client",
-    "predeploy": "npm run build",
+    "predeploy": "npm --prefix client run build",
     "deploy": "gh-pages -d client/dist",
     "lint": "eslint .",
     "preview": "vite preview client"
