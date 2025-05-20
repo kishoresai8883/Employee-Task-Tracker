@@ -5,14 +5,14 @@
   "type": "module",
   "homepage": "https://kishoresai8883.github.io/Employee-Task-Tracker/",
   "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev",
     "dev:server": "nodemon server/index.js",
-    "dev:client": "vite client",
-    "build": "vite build client",
-    "predeploy": "npm --prefix client run build",
-    "deploy": "gh-pages -d client/dist",
+    "dev:client": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview client"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
